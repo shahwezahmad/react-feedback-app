@@ -18,7 +18,7 @@ const FeedbackForm = () => {
         <SelectRating />
         <div className="input-group">
           <input type="text" onChange={handlChange} />
-          <button>send</button>
+          <button disabled>send</button>
         </div>
         {message && (
           <p style={{ textAlign: "center", marginTop: "10px" }}> {message} </p>
