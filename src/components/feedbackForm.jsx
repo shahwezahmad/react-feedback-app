@@ -5,7 +5,6 @@ import SelectRating from "./SelectRating";
 const FeedbackForm = () => {
   const [message, setMessage] = useState("");
   const handlChange = (e) => {
-    console.log(e.target.value);
     if (e.target.value.length < 10) {
       setMessage("message should at least 10 character");
     } else {
